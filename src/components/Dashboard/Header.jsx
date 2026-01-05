@@ -39,7 +39,7 @@ export default function Header() {
 
   return (
     <header className="bg-gray-900 border-b border-gray-800 px-6 py-4">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto flex lg:flex-row flex-col justify-between lg:items-center items-start">
         {/* Logo and Title */}
         <div className="flex items-center gap-3">
           <div className="bg-blue-600 p-2 rounded-lg">
@@ -54,7 +54,7 @@ export default function Header() {
         </div>
 
         {/* User Info and Actions */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 lg:mt-0 mt-6">
           {/* User Profile */}
           {user && (
             <div className="flex items-center gap-3 px-3 py-1.5 bg-gray-800 rounded-md border border-gray-700">
